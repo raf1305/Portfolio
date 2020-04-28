@@ -1,0 +1,213 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.content_font {
+    font-family: 'Baloo Bhai', cursive;
+}
+
+.fontsize1 {
+    font-size: 2.6vh;
+}
+
+.subtitle_font {
+    font-size: 3.2vh;
+}
+.nav_panel_font{
+    font-size: 4.3vh;
+}
+.title {
+    background-color: rgb(16, 185, 143);
+    font-size: 4.3vh;
+}
+
+.title h1 {
+    text-align: center;
+}
+
+#header {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    flex-wrap: wrap;
+    top: 0px;
+    flex-direction: row;
+
+}
+
+#header::before {
+    content: "";
+    background-color: rgb(5, 1, 8);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: .6;
+}
+
+#nav_img {
+    width: 85px;
+    height: 61px;
+}
+
+#nav_img img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+#nav_panel {
+    display: flex;
+    width: 90%;
+}
+
+#nav_panel ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin:0px;
+}
+
+#nav_panel ul li {
+    display: block;
+    list-style: none;
+    margin: 10px;
+    padding: 5px;
+    color: brown;
+}
+
+#nav_panel ul li:hover {
+    border: 3px solid;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.intro_content {
+    display: flex;
+    align-items: center;
+}
+
+#intro_img img {
+
+    height: 430px;
+    width: 600px;
+    border-bottom-right-radius: 90px;
+    border-top-right-radius: 300px;
+}
+
+#intro_information {
+    margin: 20px auto;
+    padding: 10px;
+}
+
+#edu_content {
+    display: flex;
+    justify-content: center;
+}
+
+#skill_language {
+    display: flex;
+    justify-content: center;
+}
+
+.skill_display_property {
+    margin: auto;
+}
+
+.sub_display_property {
+    text-align: center;
+}
+
+.skill_others_all {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.projects_both {
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+
+.thesis_content {
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+
+.title_contact {
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+
+.additional {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.additional img {
+    height: 100px;
+    width: 100px;
+}
+
+.center{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.welcome{
+    text-align: center;
+    background-color: burlywood;
+}
+.cv{
+    display: flex;
+    justify-content: center;
+}
+.cv_download{
+    display: inline-flex;
+}
+.cv_download img{
+    height: 100px;
+    width: 100px;
+}
+.cv_download .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .cv_download:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  @media (max-width:700px){
+      #header{
+          flex-direction: column;
+          position: relative;
+      }
+      #nav_panel ul{
+          flex-direction: column;
+      }
+      
+  }
